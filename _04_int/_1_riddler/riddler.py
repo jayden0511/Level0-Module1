@@ -11,3 +11,17 @@
 * After all the riddles have been asked, tell the user how many they got
   correct
 """
+from tkinter import simpledialog,messagebox,Tk
+Tk().withdraw()
+
+a=0
+y=simpledialog.askstring('title 6', 'do you have eyes')
+if y=='yes':
+    a+=1
+y=simpledialog.askstring('title 6', 'do you like video games')
+if y=='yes':
+    a+=1
+y=simpledialog.askstring('title 6', 'do you have any devices at home')
+if y=='yes':
+    a+=1
+messagebox.showinfo('title 7', a)
